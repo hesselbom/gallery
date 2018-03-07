@@ -2,6 +2,11 @@
 
 Super lightweight lightbox gallery with no dependencies.
 
+## Demo
+View the `example.html` page live here:
+
+https://gallery-vcbyqpaswv.now.sh/example.html
+
 ## Usage
 Will look for images with the attribute `data-gallery-src` and open a lightbox gallery on click.
 
@@ -16,6 +21,29 @@ URL to large image to use in gallery
 
 #### `data-gallery-id`
 *(Optional)* Used to group multiple images in a gallery. If not specified will treat image to be part of global gallery.
+
+## Install
+### As npm package
+```
+npm install https://github.com/hesselbom/gallery.git
+```
+
+```javascript
+const gallery = require('gallery')
+
+// Init galleries found inside document
+gallery(document)
+
+// Init galleries found inside specific node
+gallery(document.querySelector('.some-node'))
+```
+
+### As included script
+```html
+<script src="gallery.min.js"></script>
+```
+
+Will automatically look for galleries on current page but also exposes a global method `initGallery(parent)`.
 
 ## Override styles
 You can override the styles in `gallery` by plain css. The selectors used that can be overriden are:
