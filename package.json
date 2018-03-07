@@ -1,0 +1,27 @@
+{
+  "name": "gallery",
+  "version": "0.1.0",
+  "main": "lib/gallery.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/index.es6 --out-file lib/gallery.js && BABEL_ENV=production babel src/index.es6 --out-file lib/gallery.min.js && replace '\\\\n\\s+' '' lib/gallery.min.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.3.0",
+    "replace": "^0.3.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "env": {
+      "production": {
+        "presets": [
+          "minify"
+        ]
+      }
+    }
+  }
+}
