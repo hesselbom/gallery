@@ -25,7 +25,7 @@ URL to large image to use in gallery
 ## Install
 ### As npm package
 ```
-npm install https://github.com/hesselbom/gallery.git
+npm install gallery
 ```
 
 ```javascript
