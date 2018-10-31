@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src/index.es6 --out-file lib/gallery.js && BABEL_ENV=production babel src/index.es6 --out-file lib/gallery.min.js && replace '\\\\n\\s+' '' lib/gallery.min.js",
-    "test": "standard"
+    "test": "standard src/*.es6"
   },
   "standard": {
     "ignore": [
