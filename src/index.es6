@@ -164,7 +164,10 @@
         openImage(images[_gallery.currentIndex])
       },
       prev: () => {
-        _gallery.currentIndex = (_gallery.currentIndex + 1) % images.length
+        _gallery.currentIndex = (_gallery.currentIndex - 1)
+        if (_gallery.currentIndex < 0) {
+          _gallery.currentIndex = images.length - 1
+        }
         openImage(images[_gallery.currentIndex])
       }
     }
