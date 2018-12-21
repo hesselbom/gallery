@@ -20,6 +20,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       padding: 1em;
       z-index: 9999;
+      text-align: center;
     }
     .${className}.-open {
       opacity: 1;
@@ -37,6 +38,7 @@
     }
     .${className} > .image {
       max-width: calc(100% - 6em);
+      overflow: hidden;
     }
     .${className} > .next,
     .${className} > .prev,
