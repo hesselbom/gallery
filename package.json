@@ -1,7 +1,7 @@
 {
   "name": "gallery",
   "description": "Super lightweight lightbox gallery with no dependencies",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/gallery.js",
   "license": "MIT",
   "scripts": {

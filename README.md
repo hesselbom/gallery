@@ -5,7 +5,7 @@ Super lightweight lightbox gallery with no dependencies.
 ## Demo
 View the `example.html` page live here:
 
-https://gallery-vcbyqpaswv.now.sh/example.html
+https://gallery-gxfgq8lu8.now.sh/example.html
 
 ## Usage
 Will look for images with the attribute `data-gallery-src` and open a lightbox gallery on click.
