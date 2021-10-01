@@ -8,6 +8,10 @@
     "build": "babel src/index.es6 --out-file lib/gallery.js && BABEL_ENV=production babel src/index.es6 --out-file lib/gallery.min.js && replace '\\\\n\\s+' '' lib/gallery.min.js",
     "test": "standard src/*.es6"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hesselbom/gallery.git"
+  },
   "standard": {
     "ignore": [
       "lib"
